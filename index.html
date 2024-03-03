@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a largura da viewport e a escala inicial -->
+    <title>Login</title> <!-- Define o título da página como "Login" -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilo CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Importa os ícones da biblioteca Boxicons -->
+</head>
+
+<body>
+
+    <div class="video-container"> <!-- Define um contêiner para o vídeo de fundo -->
+        <video autoplay muted loop id="video-background"> <!-- Define o vídeo de fundo -->
+            <source src="journeys.mp4" type="video/mp4"> <!-- Especifica a fonte do vídeo em formato MP4 -->
+            <!-- Adicione mais tags <source> para outros formatos de vídeo, se necessário -->
+            Your browser does not support the video tag. <!-- Exibido se o navegador não suporta a tag de vídeo -->
+        </video>
+        <div class="wrapper"> <!-- Define um contêiner para o formulário de login -->
+            <form action=""> <!-- Define um formulário de login -->
+                <h1>Login</h1> <!-- Define o título do formulário como "Login" -->
+                <div class="input-box"> <!-- Define uma caixa de entrada para o nome de usuário -->
+                    <input type="text" placeholder="Usuário" required>
+                    <!-- Define um campo de texto para o nome de usuário -->
+                    <i class='bx bxs-user'></i> <!-- Adiciona um ícone de usuário -->
+                </div>
+                <div class="input-box"> <!-- Define uma caixa de entrada para a senha -->
+                    <input type="password" placeholder="Senha" required> <!-- Define um campo de texto para a senha -->
+                    <i class='bx bxs-lock-alt'></i> <!-- Adiciona um ícone de cadeado -->
+                </div>
+
+                <div class="remember-forgot"> <!-- Define uma seção para "Lembrar" e "Esqueceu a senha?" -->
+                    <label><input type="checkbox"> Me lembre</label> <!-- Cria uma opção para lembrar do login -->
+                    <a href="#">Esqueceu a senha?</a> <!-- Adiciona um link para redefinir a senha -->
+                </div>
+
+                <button type="submit" class="btn">Login</button> <!-- Define um botão de envio para o formulário -->
+
+                <div class="register-link"> <!-- Define uma seção para o link de registro -->
+                    <p>Não tem uma conta ? <a href="#">Registrar</a></p>
+                    <!-- Adiciona um link para registrar uma nova conta -->
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

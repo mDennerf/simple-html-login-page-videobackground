@@ -1,0 +1,226 @@
+/* Importa a fonte Poppins do Google Fonts com diferentes pesos e estilo de exibição */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Define estilos para todos os elementos */
+* {
+    margin: 0;
+    /* Define margem externa como 0 */
+    padding: 0;
+    /* Define preenchimento como 0 */
+    box-sizing: border-box;
+    /* Inclui preenchimento e borda no cálculo do tamanho total do elemento */
+    font-family: "Poppins", sans-serif;
+    /* Define a fonte padrão como Poppins, substituindo para sans-serif se Poppins não estiver disponível */
+}
+
+/* Define estilos para a classe 'video-container' */
+.video-container {
+    display: flex;
+    /* Define como um contêiner flexível */
+    justify-content: center;
+    /* Centraliza os itens ao longo do eixo principal */
+    align-items: center;
+    /* Centraliza os itens ao longo do eixo transversal */
+    min-height: 80vh;
+    /* Define a altura mínima como 80% da altura da viewport */
+}
+
+/* Define estilos para a classe 'wrapper' */
+.wrapper {
+    width: 420px;
+    /* Define a largura como 420 pixels */
+    background: rgba(117, 117, 117, .2);
+    /* Define um fundo com uma cor cinza semi-transparente */
+    border: 2px solid rgba(255, 255, 255, .2);
+    /* Define uma borda sólida semi-transparente */
+    backdrop-filter: blur(20px);
+    /* Aplica um efeito de desfoque no fundo do contêiner */
+    color: #fff;
+    /* Define a cor do texto como branco */
+    border-radius: 10px;
+    /* Define o raio da borda do contêiner */
+    padding: 30px 40px;
+    /* Define o preenchimento interno do contêiner */
+}
+
+/* Define estilos para o título dentro da classe 'wrapper' */
+.wrapper h1 {
+    font-size: 36px;
+    /* Define o tamanho da fonte como 36 pixels */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Define estilos para a classe 'input-box' dentro da classe 'wrapper' */
+.wrapper .input-box {
+    position: relative;
+    /* Define a posição como relativa */
+    width: 100%;
+    /* Define a largura como 100% */
+    height: 50px;
+    /* Define a altura como 50 pixels */
+    margin: 30px 0;
+    /* Define a margem superior e inferior como 30 pixels e a margem lateral como 0 */
+}
+
+/* Define estilos para a entrada de texto dentro da classe 'input-box' */
+.input-box input {
+    width: 100%;
+    /* Define a largura como 100% */
+    height: 100%;
+    /* Define a altura como 100% */
+    background: transparent;
+    /* Define o fundo como transparente */
+    border: none;
+    /* Remove a borda */
+    outline: none;
+    /* Remove o contorno ao receber foco */
+    border: 2px solid rgba(255, 255, 255, .2);
+    /* Define uma borda sólida semi-transparente */
+    border-radius: 40px;
+    /* Define o raio dos cantos */
+    font-size: 16px;
+    /* Define o tamanho da fonte como 16 pixels */
+    color: #fff;
+    /* Define a cor do texto como branco */
+    padding: 20px 45px 20px 20px;
+    /* Define o preenchimento interno */
+}
+
+/* Define estilos para o espaço reservado (placeholder) do texto de entrada */
+.input-box input::placeholder {
+    color: #fff;
+    /* Define a cor do espaço reservado como branco */
+}
+
+/* Define estilos para o ícone dentro da classe 'input-box' */
+.input-box i {
+    position: absolute;
+    /* Define a posição como absoluta */
+    right: 20px;
+    /* Define a distância da borda direita como 20 pixels */
+    top: 50%;
+    /* Define a distância do topo como 50% */
+    transform: translateY(-50%);
+    /* Move o ícone verticalmente para o centro */
+    font-size: 20px;
+    /* Define o tamanho da fonte do ícone como 20 pixels */
+}
+
+/* Define estilos para a classe 'remember-forgot' dentro da classe 'wrapper' */
+.wrapper .remember-forgot {
+    display: flex;
+    /* Define como um contêiner flexível */
+    justify-content: space-between;
+    /* Distribui o espaço entre os itens */
+    font-size: 14.5px;
+    /* Define o tamanho da fonte como 14.5 pixels */
+    margin: -15px 0 15px;
+    /* Define a margem */
+}
+
+/* Define estilos para a etiqueta de entrada de seleção dentro da classe 'remember-forgot' */
+.remember-forgot label input {
+    accent-color: #fff;
+    /* Define a cor de destaque */
+    margin-right: 3px;
+    /* Define a margem à direita */
+}
+
+/* Define estilos para o link dentro da classe 'remember-forgot' */
+.remember-forgot a {
+    color: #fff;
+    /* Define a cor do texto como branco */
+    text-decoration: none;
+    /* Remove a decoração de texto */
+}
+
+/* Define estilos para o link hover dentro da classe 'remember-forgot' */
+.remember-forgot a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Define estilos para o botão dentro da classe 'wrapper' */
+.wrapper .btn {
+    width: 100%;
+    /* Define a largura como 100% */
+    height: 45px;
+    /* Define a altura como 45 pixels */
+    background: #fff;
+    /* Define o fundo como branco */
+    border: none;
+    /* Remove a borda */
+    outline: none;
+    /* Remove o contorno ao receber foco */
+    border-radius: 40px;
+    /* Define o raio dos cantos */
+    box-shadow: 0 0 10px rgba(95, 95, 95, 0.1);
+    /* Adiciona uma sombra */
+    cursor: pointer;
+    /* Altera o cursor ao passar o mouse */
+    font-size: 16px;
+    /* Define o tamanho da fonte como 16 pixels */
+    color: #333;
+    /* Define a cor do texto como cinza escuro */
+    font-weight: 600;
+    /* Define a espessura da fonte como 600 */
+}
+
+/* Define estilos para o link de registro dentro da classe 'wrapper' */
+.wrapper .register-link {
+    font-size: 14.5px;
+    /* Define o tamanho da fonte como 14.5 pixels */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-top: 20px;
+    /* Define a margem superior */
+}
+
+/* Define estilos para o link dentro da classe 'register-link' */
+.register-link p a {
+    color: #fff;
+    /* Define a cor do texto como branco */
+    text-decoration: none;
+    /* Remove a decoração de texto */
+    font-weight: 600;
+    /* Define a espessura da fonte como 600 */
+}
+
+/* Define estilos para o link hover dentro da classe 'register-link' */
+.register-link p a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Define estilos para a classe 'video-container' */
+.video-container {
+    position: fixed;
+    /* Define a posição como fixa */
+    top: 0;
+    /* Define a distância do topo como 0 */
+    left: 0;
+    /* Define a distância da esquerda como 0 */
+    width: 100%;
+    /* Define a largura como 100% */
+    height: 100%;
+    /* Define a altura como 100% */
+    overflow: hidden;
+    /* Esconde o conteúdo que excede o tamanho do contêiner */
+    z-index: -1;
+    /* Define a ordem de empilhamento como atrás de outros elementos */
+}
+
+/* Define estilos para o vídeo de fundo */
+#video-background {
+    position: absolute;
+    /* Define a posição como absoluta */
+    top: 0;
+    /* Define a distância do topo como 0 */
+    left: 0;
+    /* Define a distância da esquerda como 0 */
+    min-width: 100%;
+    /* Define a largura mínima como 100% */
+    min-height: 100%;
+    /* Define a altura mínima como 100% */
+}
